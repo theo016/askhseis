@@ -8,7 +8,8 @@ month = datetime.datetime.today().strftime ('%m')
 year = datetime.datetime.today().strftime ('%Y')
 
 
-if ((datetime.datetime.now().strftime("%H:%M:%S")) < str("09:00:00")):
+if ((datetime.datetime.now().strftime("%H:%M:%S")) < str("08:00:00")): #Το κινο έχει αλλάξει την ώρα της πρώτης κλήρωσης σε 8:00 απο 9:00 , 
+                                                                       #για τους προηγούμενους μήνες το σωστό είναι να ελέγχει εάν η ώρα είναι πριν τις 9:00
     days = int(day)-1
 else:
     days = int(day)
